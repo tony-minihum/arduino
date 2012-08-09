@@ -1,4 +1,6 @@
-// Example 06b
+/* -*- mode: c++ -*- */
+
+// LED sample
 
 const int	R    =  9;    // the pin LED connected
 const int	G    = 10;    // the pin LED connected
@@ -44,13 +46,11 @@ void loop()
     analogWrite(R, 255 * ((float)val/max));
     analogWrite(G, 255 * (1-((float)val/max)));
     analogWrite(B, 0);
-  } else
-  if (val < max * 2 / 3) {
+  } else if (val < max * 2 / 3) {
     analogWrite(R, 0);
     analogWrite(G, 255 * ((float)val/max));
     analogWrite(B, 255 * (1-((float)val/max)));
-  } else
-  if (val < max ) {
+  } else if (val < max ) {
     analogWrite(R, 255 * (1-((float)val/max)));
     analogWrite(G, 0);
     analogWrite(B, 255 * ((float)val/max));
@@ -62,5 +62,4 @@ void loop()
 
   delay(10);
 }
-
 
