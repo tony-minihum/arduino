@@ -1,5 +1,4 @@
-/* -*- mode: c++ -*- */
-
+/* -*- mode: c; tab-width: 4; indent-tabs-mode: t; -*- */
 // HSV Color Space
 
 const int	R    =  9;    // the pin LED connected
